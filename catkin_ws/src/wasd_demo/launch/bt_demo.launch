@@ -1,0 +1,8 @@
+<launch>
+    <!-- Condition Node: 鍵盤監聽 -->
+    <node pkg="wasd_demo" type="wasd_condition_node.py" name="wasd_condition_node" output="screen" launch-prefix="python"/>
+
+    <!-- Action Node: 終端輸出 -->
+    <node pkg="wasd_demo" type="wasd_action_node.py" name="wasd_action_node" output="screen" launch-prefix="python"/>
+
+</launch>

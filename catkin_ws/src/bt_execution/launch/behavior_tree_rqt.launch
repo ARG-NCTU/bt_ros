@@ -1,0 +1,8 @@
+<launch>
+
+  <arg name="tree" default="test.tree"/>
+  <arg name="config" default="behavior_tree.perspective"/>
+
+  <node name="rqt" pkg="rqt_gui" type="rqt_gui" args="--perspective-file $(find behavior_tree)/rqt_perspectives/$(arg config)"/>
+  
+</launch>

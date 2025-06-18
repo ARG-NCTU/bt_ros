@@ -1,0 +1,7 @@
+<launch>
+
+  <arg name="tree" default="station_keeping.tree"/>
+
+  <node name="rqt" pkg="rqt_gui" type="rqt_gui" args="--perspective-file $(find behavior_tree)/rqt_perspectives/behavior_tree.perspective"/>
+  
+</launch>

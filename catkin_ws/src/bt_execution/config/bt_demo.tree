@@ -1,0 +1,13 @@
+?
+	->
+		(w_pressed)
+		[w_action]
+	->
+		(a_pressed)
+		[a_action]
+	->
+		(s_pressed)
+		[s_action]
+	->
+		(d_pressed)
+		[d_action]

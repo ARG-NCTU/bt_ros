@@ -1,0 +1,42 @@
+cmd "01_Roscore" {
+    exec = "roscore";
+    host = "localhost";
+}
+
+group "06_subtrees" {
+    cmd "waypoint_search"{
+        exec = "roslaunch wasd_demo bt_demo.launch";
+        host = "localhost";
+    }
+}
+
+group "07_tree" {
+    cmd "tree_server" {
+        exec = "roslaunch behavior_tree behavior_tree.launch tree:=bt_demo.tree";
+        host = "localhost";
+    }
+    cmd "tree_rqt" {
+        exec = "roslaunch behavior_tree behavior_tree_rqt.launch config:=bt_demo.perspective";
+        host = "localhost";
+    }
+}
+
+group "20_debug"
+{
+    cmd "21_rviz"
+    {
+        exec = "rviz -d rviz/aerial_sim_lab.rviz";
+        host = "localhost";
+    }
+    cmd "22_rqt"
+    {
+        exec = "rqt";
+        host = "localhost";
+    }
+}
+
+
+
+script "open_env" {
+    start cmd "01_Roscore" wait "running";
+}
