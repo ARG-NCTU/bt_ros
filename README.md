@@ -20,12 +20,11 @@ source docker_run.sh
 
 ---
 
-## 🧱 Build the Catkin Workspace (Inside Docker)
+## 🧱 Build the Catkin Workspace (First time)
 
 ```bash
 cd catkin_ws
 catkin build
-source script/00_00_setup_all.sh
 ```
 
 ---
@@ -33,5 +32,6 @@ source script/00_00_setup_all.sh
 ## 🚀 Run the Demo
 
 ```bash
+source script/00_00_setup_all.sh
 make demo_test
 ```
