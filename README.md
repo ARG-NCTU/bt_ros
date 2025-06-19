@@ -25,6 +25,7 @@ source docker_run.sh
 ```bash
 cd catkin_ws
 catkin build
+source script/00_00_setup_all.sh
 ```
 
 ---
