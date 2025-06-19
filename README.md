@@ -23,8 +23,7 @@ source docker_run.sh
 ## 🧱 Build the Catkin Workspace (First time)
 
 ```bash
-cd catkin_ws
-catkin build
+source build_all.sh 
 ```
 
 ---
