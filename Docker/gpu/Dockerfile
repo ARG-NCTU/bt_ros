@@ -57,9 +57,9 @@ RUN pip2 install pytest
 
 RUN pip3 -V && pip3 install --upgrade pip setuptools
 RUN pip3 install \
+    "catkin-tools<0.9.0" \
     requests \
     rospkg \
-    "catkin-tools<0.9.0" \
     pyautogui \
     wheel
 
