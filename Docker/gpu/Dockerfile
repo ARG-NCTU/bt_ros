@@ -61,7 +61,7 @@ RUN pip3 install \
     jupyter \
     jupyter_http_over_ws \
     rospkg \
-    catkin-tools \
+    "catkin-tools<0.9.0" \
     pyautogui \
     wheel
 
