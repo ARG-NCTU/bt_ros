@@ -32,6 +32,6 @@ catkin build
 ## 🚀 Run the Demo
 
 ```bash
-source script/00_00_setup_all.sh
+source script/00_setup_all.sh
 make demo_test
 ```
